@@ -1,0 +1,77 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				
+			}
+		},
+		{
+			"path":"pages/tabbar/member",
+			"style": {
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50
+			}
+		},
+		{
+			"path":"pages/tabbar/add",
+			"style": {}
+		},
+		{
+			"path":"pages/tabbar/search",
+			"style": {}
+		},
+		{
+			"path":"pages/tabbar/my",
+			"style": {}
+		},
+		{
+			"path":"pages/login/login",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "出入人员登记系统",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color":"#ffff7f",
+		"selectedColor":"#007AFF",
+		"backgroundColor":"#2C405A",
+		
+		"borderStyle":"black",
+		"list": [
+			{
+				"pagePath":"pages/tabbar/member",
+				"iconPath":"static/tab-icon/list.png",
+				"selectedIconPath":"static/tab-icon/list-on.png",
+				"text":"列表"
+			},
+			{
+				"pagePath":"pages/chart/chart",
+				"iconPath":"static/tab-icon/chart.png",
+				"selectedIconPath":"static/tab-icon/chart-on.png",
+				"text":"图表"
+			},
+			{
+				"pagePath":"pages/tabbar/add",
+				"iconPath":"static/tab-icon/plus.png",
+				"selectedIconPath":"static/tab-icon/plus-on.png"
+			},
+			{
+				"pagePath":"pages/tabbar/search",
+				"iconPath":"static/tab-icon/search.png",
+				"selectedIconPath":"static/tab-icon/search-on.png",
+				"text":"搜索"
+			},
+			{
+				"pagePath":"pages/tabbar/my",
+				"iconPath":"static/tab-icon/me.png",
+				"selectedIconPath":"static/tab-icon/me-on.png",
+				"text":"我的"
+			}
+		]
+	}
+}

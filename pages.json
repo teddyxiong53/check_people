@@ -36,6 +36,10 @@
 		{
 			"path":"pages/change-pwd/change-pwd",
 			"style": {}
+		},
+		{
+			"path":"pages/member-detail/member-detail",
+			"style": {}
 		}
 	],
 	"globalStyle": {

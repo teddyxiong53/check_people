@@ -5,8 +5,8 @@
 				人员信息
 			</view>
 			<view class="list-item">
-				<text>姓名</text>
-				<input type="text" v-model="name" value="" placeholder="请输入名字" />
+				<text>姓名<text class="color-red">*</text>：</text>
+				<input type="text" v-model="name"  placeholder="请输入名字" />
 			</view>
 			<view class="list-item">
 				<text>证件类型</text>
@@ -228,7 +228,7 @@
 			return {
 				data: [],
 				cityPickerValueDefault: [0,0,1],
-				name: '',
+				name: '熊汉良',
 				idTypeList: [
 					{
 						label: '身份证',
@@ -240,12 +240,12 @@
 					}
 				],
 				id_type: 0,
-				id_card: '',
+				id_card: '430482199104022173',
 				isCn: false,
-				age: 0,
-				sex: -1,
+				age: 29,
+				sex: 1,
 				native: 2,
-				phone: '',
+				phone: '15920048590',
 				from_hb: 0,
 				from_wh: 0,
 				from_address: {
@@ -446,7 +446,7 @@
 					check_in_address,
 					check_in_time,
 					body_status,
-					contact_status,
+					contact_virus,
 					contact_like_virus,
 					contact_like_virus_region,
 					comment,
@@ -510,7 +510,7 @@
 					uni.hideLoading()
 					if(res.result.code === 0) {
 						uni.showModal({
-							content:'信息上传完成，请重复提交',
+							content:'信息上传完成，请不要重复提交',
 							showCancel:false
 						})
 						if(_this.operator_name) {

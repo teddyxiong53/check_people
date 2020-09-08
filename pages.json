@@ -28,6 +28,14 @@
 		{
 			"path":"pages/login/login",
 			"style": {}
+		},
+		{
+			"path":"pages/new-user/new-user",
+			"style": {}
+		},
+		{
+			"path":"pages/change-pwd/change-pwd",
+			"style": {}
 		}
 	],
 	"globalStyle": {
@@ -58,7 +66,8 @@
 			{
 				"pagePath":"pages/tabbar/add",
 				"iconPath":"static/tab-icon/plus.png",
-				"selectedIconPath":"static/tab-icon/plus-on.png"
+				"selectedIconPath":"static/tab-icon/plus-on.png",
+				"text":"添加"
 			},
 			{
 				"pagePath":"pages/tabbar/search",
